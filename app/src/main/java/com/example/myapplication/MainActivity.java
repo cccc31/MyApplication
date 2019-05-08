@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.TextureView;
@@ -19,5 +20,10 @@ public class MainActivity extends AppCompatActivity {
         EditText et = findViewById(R.id.editText);
         // clear text
         et.setText("");
+    }
+
+    public void lab8(View v){
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
     }
 }
